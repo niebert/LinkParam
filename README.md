@@ -78,9 +78,7 @@ creates a HTML table with two column for key and value of the parameter hash aVa
 * Return Type: :String
 * Visibility: public
 creates a Edit HTML table with two column for key and value of the parameter hash aVars.
-The keys of aVars are used as IDs for the HTML form.
-An optional ID prefix as parameter can be used to create a unique ID for the DOM elements
-All parameters are visible in an input field.):String 
+The keys of aVars are used as IDs for the HTML form. An optional ID prefix as parameter can be used to create a unique ID for the DOM elements- All parameters are visible in an input field.):String 
 
 #### calcSize()
 * Visibility: public
@@ -89,17 +87,13 @@ calculates the number of variables defined in the URL parameters, stores result 
 #### encodeHTML(pValue:String,pWrapCode:Boolean):String
 * Return Type: :String
 * Visibility: public
-
 Encodes source code for HTML-Output in as code or textarea in the following way:
  1) Replace "&" character with "&amp;"
  2) Replace "<" character with "&lt;"
  3) Replace ">" character with "&gt;"
-
-The converted pValue will wrapped with <pre> and <code> tags for direct display as HTML 
-and without code tag wrapper if the code is written as inner HTML and value to a textarea.):String 
+The converted pValue will wrapped with <pre> and <code> tags for direct display as HTML and without code tag wrapper if the code is written as inner HTML and value to a textarea.):String 
 
 #### exists(pVar:String):Boolean
 * Return Type: :Boolean
 * Visibility: public
-
 checks if the parameter with variable 'pVar' exists in parameter hash this.aVars):Boolean 
