@@ -91,9 +91,9 @@ Encodes source code for HTML-Output in as code or textarea in the following way:
  1) Replace "&" character with "&amp;"
  2) Replace "<" character with "&lt;"
  3) Replace ">" character with "&gt;"
-The converted pValue will wrapped with <pre> and <code> tags for direct display as HTML and without code tag wrapper if the code is written as inner HTML and value to a textarea.):String 
+The converted pValue will wrapped with &lt;pre&gt; and &lt;code&gt; tags for direct display as HTML and without code tag wrapper if the code is written as inner HTML and value to a textarea. 
 
 #### exists(pVar:String):Boolean
 * Return Type: :Boolean
 * Visibility: public
-checks if the parameter with variable 'pVar' exists in parameter hash this.aVars):Boolean 
+checks if the parameter with variable 'pVar' exists in parameter hash this.aVars
