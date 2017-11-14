@@ -1,7 +1,9 @@
 ## Javascript Class: LinkParam
-created Javascript Class Creator JSCC 2017/11/03 10:41:45
+created Javascript Class Creator JSCC 2017/11/14 11:37:47
 https://niebert.github.io/JavascriptClassCreator
 File: js/linkparam.js
+
+![UML](LinkParam_UML.png)
 
 ### Attributes: LinkParam
 
@@ -38,7 +40,9 @@ Comment for getLink):String
 
 #### setValue(pVar:String,pValue:String)
 * Visibility: public
-Comment for setValue) 
+sets the value of a link parameter, this is useful
+when a parameter for URL are generated from the link parameters
+defined in LinkParam) 
 
 #### getValue(pVar:String):String
 * Return Type: :String
@@ -91,9 +95,24 @@ Encodes source code for HTML-Output in as code or textarea in the following way:
  1) Replace "&" character with "&amp;"
  2) Replace "<" character with "&lt;"
  3) Replace ">" character with "&gt;"
+<<<<<<< Updated upstream
 The converted pValue will wrapped with &lt;pre&gt; and &lt;code&gt; tags for direct display as HTML and without code tag wrapper if the code is written as inner HTML and value to a textarea. 
+=======
+The converted pValue will wrapped with "pre" and "code" tags for direct display as HTML 
+and without code tag wrapper if the code is written as inner HTML and value to a textarea.):String 
+>>>>>>> Stashed changes
 
 #### exists(pVar:String):Boolean
 * Return Type: :Boolean
 * Visibility: public
+<<<<<<< Updated upstream
 checks if the parameter with variable 'pVar' exists in parameter hash this.aVars
+=======
+checks if the parameter with variable 'pVar' exists in parameter hash this.aVars):Boolean 
+
+#### param2DOM(pLinkID:String,pDOMID:String,pOutType:String)
+* Visibility: public
+param2DOM(pLinkID,pDOMID) read the Link Parameter of the pLinkID if exists and 
+- (html) writes the content to innerHTML (pOutType='html') of DOM node pDOMID or
+- (val) writes the content to the value of the HTML input object with the ID pDOMID  ) 
+>>>>>>> Stashed changes
