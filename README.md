@@ -5,11 +5,16 @@ https://niebert.github.io/JavascriptClassCreator
 
 File: js/linkparam.js
 
-'''Demo:''' https://niebert.github.io/LinkParam
+'''Demo:''' https://niebert.github.io/LinkParam/index.html
 
-The demo works cross-origine. You can submit a parameter cross-origine to the file <tt>receiver.html</tt>.
+The file ___index.html___
 
-'''Examples:'''  https://niebert.github.io/LinkParam/reveicer.html?myparam=Test360
+The demo works cross-origine. You can submit a parameter cross-origine to the file ___receiver.html___. Copy index.html to your
+
+'''Examples:'''
+* https://niebert.github.io/LinkParam/reveicer.html?myparam=TestValue
+* https://niebert.github.io/LinkParam/reveicer.html?myparam=Test&count=460
+
 
 ![UML](LinkParam_UML.png)
 
