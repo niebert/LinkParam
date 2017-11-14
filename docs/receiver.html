@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Receiver of Params</title>
+    <script src="linkparam.js"></script>
+  </head>
+  <body>
+  
+  	<div id="paramout">
+  	 Undefined Paramater
+  	</div>
+  	<input type="text" id="textout" value="undefined content">
+  	<script>
+  		var vLinkParam = new LinkParam();
+  		vLinkParam.init(document);
+  		if (vLinkParam.exists("myparam")) {
+  			var vPar = vLinkParam.exists("myparam");
+  			alert(vPar);
+  			document.getElementById("paramout").innerHTML = vPar;
+  			document.getElementById("textout").value = vPar;
+  		} else {
+  			alert("Receiver needs a LinkParameter 'myparam'")
+  		}
+  	</script>
+  </body>
+</html>
