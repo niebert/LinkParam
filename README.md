@@ -1,7 +1,15 @@
 ## Javascript Class: LinkParam
 created Javascript Class Creator JSCC 2017/11/14 11:37:47
+
 https://niebert.github.io/JavascriptClassCreator
+
 File: js/linkparam.js
+
+'''Demo:''' https://niebert.github.io/LinkParam
+
+The demo works cross-origine. You can submit a parameter cross-origine to the file <tt>receiver.html</tt>.
+
+'''Examples:'''  https://niebert.github.io/LinkParam/reveicer.html?myparam=Test360
 
 ![UML](LinkParam_UML.png)
 
@@ -101,7 +109,7 @@ and without code tag wrapper if the code is written as inner HTML and value to a
 #### exists(pVar:String):Boolean
 * Return Type: :Boolean
 * Visibility: public
-checks if the parameter with variable 'pVar' exists in parameter hash this.aVars):Boolean 
+checks if the parameter with variable 'pVar' exists in parameter hash this.aVars):Boolean
 
 #### param2DOM(pLinkID:String,pDOMID:String,pOutType:String)
 * Visibility: public
