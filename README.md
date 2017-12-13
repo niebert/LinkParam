@@ -3,15 +3,15 @@ created Javascript Class Creator JSCC 2017/11/14 11:37:47
 
 https://niebert.github.io/JavascriptClassCreator
 
-File: js/linkparam.js
+**File:** ___js/linkparam.js___
 
-'''Demo:''' https://niebert.github.io/LinkParam/index.html
+**Demo LinkParam:** https://niebert.github.io/LinkParam/index.html
 
-The file ___index.html___
+The file ___index.html___ sends the values via the Link Parameter.
 
-The demo works cross-origine. You can submit a parameter cross-origine to the file ___receiver.html___. Copy index.html to your
+The demo works cross-origine. You can submit a parameter cross-origine to the file ___receiver.html___. Copy ___index.html___ to your hard drive and press the submit button.
 
-'''Examples:'''
+**Examples:**
 * https://niebert.github.io/LinkParam/reveicer.html?myparam=TestValue
 * https://niebert.github.io/LinkParam/reveicer.html?myparam=Test&count=460
 
