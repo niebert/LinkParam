@@ -15,7 +15,7 @@
   		var vLinkParam = new LinkParam();
   		vLinkParam.init(document);
   		if (vLinkParam.exists("myparam")) {
-  			var vPar = vLinkParam.exists("myparam");
+  			var vPar = vLinkParam.getValue("myparam");
   			alert(vPar);
   			document.getElementById("paramout").innerHTML = vPar;
   			document.getElementById("textout").value = vPar;
