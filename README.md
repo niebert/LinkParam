@@ -115,9 +115,9 @@ calculates the number of variables defined in the URL parameters, stores result 
 * Return Type: `String`
 * Visibility: `public`
 Encodes source code for HTML-Output in as code or textarea in the following way:
- 1) Replace "&" character with "&amp;"
- 2) Replace "<" character with "&lt;"
- 3) Replace ">" character with "&gt;"
+ 1) Replace "&" character with "&amp;amp;"
+ 2) Replace "<" character with "&amp;lt;"
+ 3) Replace ">" character with "&amp;gt;"
 The converted `pValue` will wrapped with `pre` and `code` tags for direct display as HTML
 and without code tag wrapper if the code is written as inner HTML and value to a textarea.)
 * Return: String
