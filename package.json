@@ -1,6 +1,6 @@
 {
   "name": "linkparam",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Evaluate the Link/URL parameter submitted to an HTML-file. This is in general used by scripts on a server that receives content by submitting HTML form content to the server. The package LinkParam can evaluate these parameters and use the values in general stringified JSON content cross-origine via the Link Paramater after the questionmark in the URL. ",
   "main": "src/linkparam.js",
   "directories": {
