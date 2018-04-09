@@ -1,6 +1,8 @@
 #!/bin/sh
-echo "cp src/linkparam.js dist/linkparam.js"
+echo "(1) DIST: cp src/linkparam.js dist/linkparam.js"
 cp src/linkparam.js dist/linkparam.js
-echo "(1) build DONE"
+echo "(2) DOCS: cp src/linkparam.js docs/linkparam.js"
+cp src/linkparam.js docs/linkparam.js
+echo "(3) build DONE"
 npm run compress
-echo "(2) compress DONE"
+echo "(4) compress DONE"

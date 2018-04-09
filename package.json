@@ -18,8 +18,9 @@
     "build2dist": "browserify src/main.js  | uglifyjs -mc warnings=false > dist/linkparam.src.min.js",
     "test": "node-lint dist/linkparam.js",
     "copy": "cp src/linkparam.js dist/linkparam.js",
+    "copydocs": "cp src/linkparam.js docs/linkparam.js",
     "compress": "uglifyjs dist/linkparam.js --compress -o dist/linkparam.min.js",
-    "build": "browserify src/main.js  | uglifyjs -mc warnings=false > docs/js/linkparam.src.min.js"
+    "build": "browserify src/main.js  | uglifyjs -mc warnings=false > docs/linkparam.min.js"
   },
   "repository": {
     "type": "git",
