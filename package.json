@@ -20,7 +20,7 @@
     "copy": "cp src/linkparam.js dist/linkparam.js",
     "copydocs": "cp src/linkparam.js docs/linkparam.js",
     "compress": "uglifyjs dist/linkparam.js --compress -o dist/linkparam.min.js",
-    "build": "browserify src/main.js  | uglifyjs -mc warnings=false > docs/linkparam.min.js"
+    "build": "browserify src/main.js  | uglifyjs -mc warnings=false > docs/linkparam.src.min.js"
   },
   "repository": {
     "type": "git",
