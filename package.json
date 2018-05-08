@@ -10,14 +10,13 @@
     "browserify": "^14.5.0",
     "concat-files": "^0.1.1",
     "doctoc": "^1.3.0",
-    "lint": "^1.1.2",
     "uglify-js": "^2.6.2",
     "watchify": "^3.9.0"
   },
   "scripts": {
     "watch": "watchify src/main.js -o dist/linkparam.src.js -v",
     "build2dist": "browserify src/main.js  | uglifyjs -mc warnings=false > dist/linkparam.src.min.js",
-    "test": "node-lint dist/linkparam.js",
+    "test": "jshint dist/linkparam.js",
     "copy": "cp src/linkparam.js dist/linkparam.js",
     "copydocs": "cp src/linkparam.js docs/linkparam.js",
     "compress": "uglifyjs dist/linkparam.js --compress -o dist/linkparam.min.js",

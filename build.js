@@ -7,10 +7,15 @@ vHeader += "\n Package:  "+pkg.name;
 vHeader += "\n Version:  "+pkg.version;
 vHeader += "\n Homepage: "+pkg.homepage;
 vHeader += "\n Author:   "+pkg.author;
-vHeader += "\n License:  "+pkg.licence;
+vHeader += "\n License:  "+pkg.license;
 vHeader += "\n Require Module with:";
 vHeader += "\n    const "+vExportVar+" = require('" + pkg.name+ "');";
-vHeader += "\n ------------------------------------------ */\n";
+vHeader += "\n ------------------------------------------ */";
+vHeader += "\n";
+vHeader += "\n//--- JSHint Settings: -----";
+vHeader += "\n/*jshint  laxcomma: true, asi: true, maxerr: 150 */";
+vHeader += "\n/*global alert, confirm, console, prompt */";
+vHeader += "\n";
 fs.writeFile("./src/npm_header.js", vHeader, function(err) {
     if(err) {
         return console.log(err);
@@ -32,19 +37,9 @@ var vLibOut = './dist/'+pkg.name+'.js';
 console.log("Create Library '"+vLibOut+"'");
   concat([
     './src/npm_header.js',
-    vLibPath+'arrayhash.js',
-    vLibPath+'blob.js',
-    vLibPath+'bootstrap.js',
-    vLibPath+'classeditor.js',
-    vLibPath+'date.js',
-    vLibPath+'filesaver.js',
-    vLibPath+'handlebars.js',
-    vLibPath+'handlebars_helper.js',
-    vLibPath+'jsoneditor.js',
     vLibPath+'linkparam.js',
-    vLibPath+'localstorage.js',
-    './src/npm_tail.js'
+    //'./src/npm_tail.js'
   ], vLibOut, function(err) {
     if (err) throw err
-    console.log('done');
+    console.log('File: "'+vLibOut+'" created!');
   });
