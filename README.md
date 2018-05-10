@@ -12,8 +12,8 @@ The file `index.html` sends the values via the Link Parameter.
 The demo works cross-origine. You can submit a parameter cross-origine to the file `receiver.html`. Copy `index.html` to your hard drive and press the submit button.
 
 **Examples:**
-* https://niebert.github.io/LinkParam/reveicer.html?myparam=TestValue
-* https://niebert.github.io/LinkParam/reveicer.html?myparam=Test&count=460
+* https://niebert.github.io/LinkParam/receiver.html?myparam=TestValue
+* https://niebert.github.io/LinkParam/receiver.html?myparam=Test&count=460
 
 
 ![UML](LinkParam_UML.png)
