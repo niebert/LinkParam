@@ -15,6 +15,7 @@ The demo works cross-origine. You can submit a parameter cross-origine to the fi
 * https://niebert.github.io/LinkParam/receiver.html?myparam=TestValue
 * https://niebert.github.io/LinkParam/receiver.html?myparam=Test&count=460
 
+**NPM Module:** https://www.npmjs.com/package/linkparam
 
 ![UML](LinkParam_UML.png)
 
