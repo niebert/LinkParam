@@ -1,8 +1,8 @@
 #!/bin/sh
 echo "(1) DIST: cp src/linkparam.js dist/linkparam.js"
 cp src/linkparam.js dist/linkparam.js
-echo "(2) DOCS: cp src/linkparam.js docs/linkparam.js"
-cp src/linkparam.js docs/linkparam.js
+echo "(2) DOCS: cp src/linkparam.js docs/js/linkparam.js"
+cp src/linkparam.js docs/js/linkparam.js
 echo "(3) MAIN: cp src/linkparam.js src/main.js"
 cat src/header.js > src/main.js
 cat src/linkparam.js >> src/main.js

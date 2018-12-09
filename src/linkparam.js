@@ -629,7 +629,7 @@ LinkParam.prototype.encodeHTML = function (pValue,pWrapCode) {
       vValue = vValue.replace(/>/g,"&gt;");
       vValue = vValue.replace(/&/g,"&amp;");
   }
-  if (pWrapCode && (pWrapCode == true)) {
+  if (pWrapCode && (pWrapCode === true)) {
       vValue = "<pre><code>"+vValue+"</code></pre>";
   }
   return vValue

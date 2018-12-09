@@ -1,6 +1,18 @@
 var vExportVar = "LinkParam";
 const pkg = require('./package');
 var fs = require('fs');
+
+
+function getDateTime() {
+	var vNow = new Date();
+	var vSep = "/"; // set separator for date
+	var vOut = vNow.getFullYear() + vSep +outTime(vNow.getMonth()+1) + vSep + outTime(vNow.getDate());
+  vOut += " "; // Separator between Date and Time
+	vSep = ":"; // set separator for time
+	vOut += vNow.getHours() + vSep + outTime(vNow.getMinutes()) + vSep + outTime(vNow.getSeconds());
+	return vOut;
+};
+
 var vHeader = "/* ---------------------------------------";
 vHeader += "\n Exported Module Variable: "+vExportVar;
 vHeader += "\n Package:  "+pkg.name;
@@ -8,6 +20,7 @@ vHeader += "\n Version:  "+pkg.version;
 vHeader += "\n Homepage: "+pkg.homepage;
 vHeader += "\n Author:   "+pkg.author;
 vHeader += "\n License:  "+pkg.license;
+vHeader += "\n Date:     "+getDateTime();
 vHeader += "\n Require Module with:";
 vHeader += "\n    const "+vExportVar+" = require('" + pkg.name+ "');";
 vHeader += "\n ------------------------------------------ */";
