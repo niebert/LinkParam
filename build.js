@@ -3,6 +3,17 @@ const pkg = require('./package');
 var fs = require('fs');
 
 
+function outTime(pNr) {
+	var vOut = pNr;
+	if (pNr == 0) {
+		vOut = "00"
+	} if (pNr<10) {
+		vOut = "0"+pNr;
+	};
+	return vOut
+};
+
+
 function getDateTime() {
 	var vNow = new Date();
 	var vSep = "/"; // set separator for date
@@ -37,6 +48,7 @@ fs.writeFile("./src/npm_header.js", vHeader, function(err) {
 });
 var vTail = "\n";
 vTail += "\n// -------NPM Export Variable: " +vExportVar+ "---------------";
+// vTail += "\nmodule.exports = {\n    \""+vExportVar+"\":"+vExportVar+"\n};";
 vTail += "\nmodule.exports = "+vExportVar+";";
 fs.writeFile("./src/npm_tail.js", vTail, function(err) {
     if(err) {

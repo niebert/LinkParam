@@ -17,7 +17,7 @@
   		if (vLinkParam.exists("myparam")) {
   			var vPar = vLinkParam.getValue("myparam");
   			alert(vPar);
-  			document.getElementById("paramout").innerHTML = vPar;
+  			document.getElementById("paramout").innerHTML = vLinkParam.getTableHTML();
   			document.getElementById("textout").value = vPar;
   		} else {
   			alert("Receiver needs a LinkParameter 'myparam'")
