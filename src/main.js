@@ -1,21 +1,18 @@
-// NPM Package Header:  LinkParam()
-// Repository: https://www.github.com/niebert/LinkParam
-// LinkParam can be used with multiple instances
-// e.g. for iframes, init the instance with the "document" instance.
-// see example
-/*
+/* ---------------------------------------
+ Exported Module Variable: LinkParam
+ Package:  linkparam
+ Version:  1.1.8
+ Homepage: https://github.com/niebert/LinkParam#readme
+ Author:   Engelbert Niehaus
+ License:  MIT
+ Date:     2018/12/31 9:26:21
+ Require Module with:
+    const LinkParam = require('linkparam');
+ ------------------------------------------ */
 
-const LinkParam = require('linkparam');
-var vLinkParam = new LinkParam();
-vLinkParam.init(document);
-if (vLinkParam.exists("myparam")) {
-  var vPar = vLinkParam.getValue("myparam");
-  alert("myparam="+vPar);
-} else {
-  alert("HTML file needs a LinkParameter 'myparam'")
-}
-
-*/
+//--- JSHint Settings: -----
+/*jshint  laxcomma: true, asi: true, maxerr: 150 */
+/*global alert, confirm, console, prompt */
 //#################################################################
 //# Javascript Class: LinkParam()
 //#       SuperClass:
@@ -564,7 +561,7 @@ LinkParam.prototype.getEditTableHTML = function (pPrefixID) {
         vOut += "</td>";
         vOut += "<td>";
         // second parameter vWrapCode = true for non textarea use;
-        vOut += "<textarea id='"+vPrefix+iID+"'' cols='90' rows='"+vRows+"''>";
+        vOut += "<textarea id='"+vPrefixID+iID+"'' cols='90' rows='"+vRows+"''>";
         vOut += vContent;
         vOut += "</textarea>";
         vOut += "</td>";
@@ -741,5 +738,6 @@ LinkParam.prototype.param2DOM = function (pLinkID,pDOMID,pOutType) {
 // JS Class: LinkParam
 //-------------------------------------------
 
-// export the constructor of the module
+
+// -------NPM Export Variable: LinkParam---------------
 module.exports = LinkParam;

@@ -1,6 +1,6 @@
 {
   "name": "linkparam",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "description": "Evaluate the Link/URL parameter submitted to an HTML-file. This is in general used by scripts on a server that receives content by submitting HTML form content to the server. The package LinkParam can evaluate these parameters and use the values in general stringified JSON content cross-origine via the Link Paramater after the questionmark in the URL. ",
   "main": "src/main.js",
   "directories": {
@@ -16,6 +16,7 @@
   "scripts": {
     "watch": "watchify src/main.js -o dist/linkparam.src.js -v",
     "build2dist": "browserify src/linkparam.js  | uglifyjs -mc warnings=false > dist/linkparam.src.min.js",
+    "build": "node ./build.js;uglifyjs src/linkparam.js --compress -o  docs/js/linkparam.min.js",
     "test": "jshint dist/linkparam.js",
     "compress": "uglifyjs dist/linkparam.js --compress -o dist/linkparam.min.js",
     "browserify": "browserify src/linkparam.js  | uglifyjs -mc warnings=false > docs/js/linkparam.src.min.js"

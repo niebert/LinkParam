@@ -59,12 +59,31 @@ fs.writeFile("./src/npm_tail.js", vTail, function(err) {
 var concat = require('concat-files');
 var vLibPath = './src/';
 var vLibOut = './dist/'+pkg.name+'.js';
+var vLibDocs = './docs/js/'+pkg.name+'.js';
 console.log("Create Library '"+vLibOut+"'");
   concat([
     './src/npm_header.js',
-    vLibPath+'linkparam.js',
+    vLibPath + pkg.name + '.js',
     //'./src/npm_tail.js'
   ], vLibOut, function(err) {
     if (err) throw err
     console.log('File: "'+vLibOut+'" created!');
+  });
+console.log("Create Library '"+vLibDocs+"'");
+  concat([
+    './src/npm_header.js',
+    vLibPath + pkg.name + '.js',
+    //'./src/npm_tail.js'
+  ], vLibDocs, function(err) {
+      if (err) throw err
+      console.log('File: "'+vLibDocs+'" created!');
+  });
+console.log("Create NPM main Library '" + pkg.main + "'");
+  concat([
+    './src/npm_header.js',
+    vLibPath + pkg.name + '.js',
+    './src/npm_tail.js'
+  ], pkg.main, function(err) {
+    if (err) throw err
+    console.log('File: "'+ pkg.main + '" created!');
   });

@@ -546,7 +546,7 @@ LinkParam.prototype.getEditTableHTML = function (pPrefixID) {
         vOut += "</td>";
         vOut += "<td>";
         // second parameter vWrapCode = true for non textarea use;
-        vOut += "<textarea id='"+vPrefix+iID+"'' cols='90' rows='"+vRows+"''>";
+        vOut += "<textarea id='"+vPrefixID+iID+"'' cols='90' rows='"+vRows+"''>";
         vOut += vContent;
         vOut += "</textarea>";
         vOut += "</td>";

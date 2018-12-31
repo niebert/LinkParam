@@ -19,6 +19,12 @@ The demo works cross-origine. You can submit a parameter cross-origine to the fi
 
 ![UML](LinkParam_UML.png)
 
+## NPM Build
+The part of build process is defined by `build.js` and the chain of code generation can be executed with
+```shell
+npm run build
+```
+
 ## NPM installation
 Installation with NPM and save the package to your dependencies (i.e. add entry `linkparam` as package in your `package.json`) with
 `npm install linkparam --save`
